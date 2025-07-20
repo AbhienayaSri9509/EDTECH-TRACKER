@@ -87,3 +87,6 @@ Screenshot of Students page:
 ![teacher login page](image-3.png)
 ![creating assignmnet by teacher](image-4.png)
 ![assignment created](image-5.png)# EDTECH-TRACKER
+![alt text]({777C21BD-7789-4E5C-9400-E3A10D8A3CAD}-1.png)
+C:\Users\HP\edtech-tracker\image-1.png
+C:\Users\HP\edtech-tracker\image-2.png
