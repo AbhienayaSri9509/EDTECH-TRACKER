@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}Create Assignment{% endblock %}
+{% block content %}
+<h2>Create New Assignment</h2>
+<form method="POST" class="mt-3">
+  <div class="mb-3">
+    <input type="text" name="title" class="form-control" placeholder="Assignment Title" required>
+  </div>
+  <div class="mb-3">
+    <textarea name="description" class="form-control" rows="4" placeholder="Description" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Create Assignment</button>
+</form>
+{% endblock %}

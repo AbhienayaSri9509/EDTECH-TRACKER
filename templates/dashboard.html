@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ current_user.name }} ({{ current_user.role }})</h2>
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+
+    {% if current_user.role == 'teacher' %}
+        <h3>Your Assignments</h3>
+        <a href="{{ url_for('create_assignment') }}">Create Assignment</a>
+        <ul>
+            {% for assignment in assignments %}
+                <li>
+                    <b>{{ assignment.title }}</b> - <a href="{{ url_for('view_submissions', id=assignment.id) }}">View Submissions</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h3>All Assignments</h3>
+        <ul>
+            {% for assignment in assignments %}
+                <li>
+                    <b>{{ assignment.title }}</b> - <a href="{{ url_for('submit_assignment', id=assignment.id) }}">Submit</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

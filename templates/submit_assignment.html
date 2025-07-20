@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block title %}Submit Assignment{% endblock %}
+{% block content %}
+<h2>Submit Assignment</h2>
+<form method="POST" class="mt-3">
+  <div class="mb-3">
+    <label for="assignment_id" class="form-label">Assignment</label>
+    <select name="assignment_id" id="assignment_id" class="form-select" required>
+      <option value="">-- Choose Assignment --</option>
+      <option value="">Maths</option>
+      <option value="">Physics</option>
+      <option value="">English</option>
+      <option value="">Chemistry</option>
+      <option value="">Biology</option>
+      {% for assignment in assignments %}
+        <option value="{{ assignment.id }}">{{ assignment.title }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="mb-3">
+    <textarea name="content" class="form-control" rows="5" placeholder="Write your answer..." required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

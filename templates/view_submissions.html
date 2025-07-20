@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block title %}Submissions{% endblock %}
+{% block content %}
+<h2>Student Submissions</h2>
+{% for submission in submissions %}
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Assignment: {{ submission.assignment_id }}</h5>
+      <p class="card-text"><strong>Student ID:</strong> {{ submission.student_id }}</p>
+      <p class="card-text">{{ submission.content }}</p>
+    </div>
+  </div>
+{% else %}
+  <p>No submissions yet.</p>
+{% endfor %}
+{% endblock %}

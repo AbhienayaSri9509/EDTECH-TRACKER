@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+input, textarea, select {
+    margin: 5px 0;
+    width: 300px;
+}
