@@ -80,10 +80,3 @@ Student	student1	password2
 
 (Register these accounts manually first)
 
-Screenshot of Students page:
-![student login page](edtech-tracker\image.png)
-![submission page](image-1.png)
-![assignment submitted](image-2.png)
-![teacher login page](image-3.png)
-![creating assignmnet by teacher](image-4.png)
-![assignment created](image-5.png)# EDTECH-TRACKER
