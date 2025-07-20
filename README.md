@@ -81,9 +81,10 @@ Student	student1	password2
 (Register these accounts manually first)
 
 Screenshot of Students page:
-![student login page](C:\Users\HP\edtech-tracker\image.png)
+![student login page]("C:\Users\HP\Downloads\submit page.jpg")
 ![submission page](C:\Users\HP\edtech-tracker\image-1.png)
 ![assignment submitted](C:\Users\HP\edtech-tracker\image-2.png)
 ![teacher login page](C:\Users\HP\edtech-tracker\image-3.png)
 ![creating assignmnet by teacher](C:\Users\HP\edtech-tracker\image-4.png)
 ![assignment created](C:\Users\HP\edtech-tracker\image-5.png)# EDTECH-TRACKER
+
